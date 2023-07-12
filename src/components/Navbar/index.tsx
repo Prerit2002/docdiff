@@ -7,7 +7,7 @@ function Navbar() {
         console.log("hi" ,data)
     }
     return (
-        <div className="flex justify-between  bg-slate-600">
+        <div className="flex justify-between items-center  bg-gray-800  px-2 sm:px-6 lg:px-8 h-16  p-2 text-gray-400">
             <div>
                 {!loading && !data  ? 
                 <a
@@ -23,7 +23,7 @@ function Navbar() {
             
             </div>
             <div>
-                {!loading  && (
+                { data  && (
                     <h1 className="m-2  text-white text-xl ">Hello {data?.viewer.login}</h1>
                 )}
             </div>
