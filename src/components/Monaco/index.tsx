@@ -1,6 +1,4 @@
 import { DiffEditor } from '@monaco-editor/react'
-
-
 function Monaco({text}: {text: string}) {
     return (
         <DiffEditor
@@ -12,5 +10,6 @@ function Monaco({text}: {text: string}) {
       />
     )
 }
+
 
 export default Monaco
