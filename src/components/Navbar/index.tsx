@@ -1,6 +1,5 @@
 import { useQuery } from "@apollo/client";
 import { getUser } from "../../queries";
-
 function Navbar() {
   const { data, loading } = useQuery(getUser);
   if (!loading) {
