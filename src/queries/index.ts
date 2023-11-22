@@ -21,32 +21,7 @@ query {
 }
 `
 
-// export const TestQuery = gql`
-// query TestQuery {
-//     repository(name: "React-Admin-", owner: "Prerit2002") {
-//       name
-//       nameWithOwner
-//       updatedAt
-//       url
-//       file1 : object(expression: "main:src") {
-//         id
-//         ... on Tree {
-//           id
-//           entries {
-//             name
-//             object{
-//               ... on Blob {
-                
-//                 text
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-  
-// `
+
 
 export const getFileTree = gql`
   query ($name: String!) {
